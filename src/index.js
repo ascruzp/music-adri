@@ -13,7 +13,7 @@ const app = express();
 
 //Settings
 app.set("port", process.env.PORT || 4000);
-app.use(cors({ origin: ["http://localhost:3000", "http://127.0.0.1:5500"], credentials: true }));
+app.use(cors());
 //Middlewares
 app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
